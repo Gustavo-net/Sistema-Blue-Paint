@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="package_Controller.controllerVendedor">
+   <children>
+      <Pane prefHeight="486.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #FFFFFF 15%, #87CEEB 85%);">
+         <children>
+            <Text layoutX="2.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu Principal" wrappingWidth="169.33684921264648">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="19.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/3456426-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="69.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrar Venda" wrappingWidth="108.53671264648438">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="IdButtonFornecedor" layoutX="71.0" layoutY="173.0" onMouseClicked="#ViewBtnFornecedor" strokeType="OUTSIDE" strokeWidth="0.0" text="Fornecedores" wrappingWidth="108.53671264648438">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="16.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/images__20_-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="17.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/1311237__1_-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="IdButtonProduto" layoutX="72.0" layoutY="241.0" onMouseClicked="#ViewBtnProduto" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtos" wrappingWidth="108.53671264648438">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="idButtonCliente" layoutX="71.0" layoutY="311.0" onMouseClicked="#ViewBtnCliente" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes" wrappingWidth="108.53671264648438">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="16.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/3126647-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="66.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendedores" wrappingWidth="108.53671264648438">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="14.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/2125212-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <TextField fx:id="labelPesquisar" layoutX="181.0" layoutY="68.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-radius: 60;" />
+      <ImageView fitHeight="34.0" fitWidth="27.0" layoutX="193.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/images__21_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="27.0" layoutX="180.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/images__22_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="27.0" layoutX="319.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/1159633-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="27.0" layoutX="427.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/images__23_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TableVendedor" layoutX="174.0" layoutY="167.0" prefHeight="320.0" prefWidth="706.0">
+        <columns>
+          <TableColumn fx:id="columnID" prefWidth="28.79998779296875" text="ID" />
+          <TableColumn fx:id="columnNome" prefWidth="81.60005187988281" text="Nome" />
+            <TableColumn fx:id="columnCPF" prefWidth="43.20001220703125" text="CPF" />
+            <TableColumn fx:id="columnEmail" prefWidth="78.40008544921875" text="Email" />
+            <TableColumn fx:id="columnTelefone" prefWidth="66.4000244140625" text="Telefone" />
+            <TableColumn fx:id="columnDataNasc" prefWidth="71.199951171875" text="DataNasc" />
+            <TableColumn fx:id="columnDataCont" prefWidth="78.4000244140625" text="DataCont" />
+            <TableColumn fx:id="columnTotalVend" prefWidth="76.0" text="TotalVend" />
+            <TableColumn fx:id="columnEndereço" prefWidth="142.4000244140625" text="Endereço" />
+        </columns>
+      </TableView>
+      <Text fx:id="btnButon1" layoutX="728.0" layoutY="33.0" onMouseClicked="#btnButtonTeste" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendedores" wrappingWidth="123.73678588867188">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="681.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/2125212-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnVoltar" layoutX="239.0" layoutY="28.0" mnemonicParsing="false" onAction="#btnVoltarVendedor" style="-fx-background-color: #b2e9f9; -fx-background-radius: 60;" text="VOLTAR">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPesquisar" layoutX="475.0" layoutY="67.0" mnemonicParsing="false" onAction="#btnPesquisar" style="-fx-background-color: #b2e9f9; -fx-background-radius: 60;" text="PESQUISAR">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCadastrar" layoutX="211.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnCadastrarVendedor" style="-fx-background-color: #b2e9f9; -fx-background-radius: 60;" text="CADASTRAR">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="352.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnEditarVendedor" style="-fx-background-color: #b2e9f9; -fx-background-radius: 60;" text="EDITAR">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDeletar" layoutX="461.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnDeletarAction" style="-fx-background-color: #b2e9f9; -fx-background-radius: 60;" text="EXCLUIR">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

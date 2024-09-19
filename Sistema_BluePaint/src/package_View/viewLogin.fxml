@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="package_Controller.controllerLogin">
+   <children>
+      <TextField fx:id="txtUser" layoutX="340.0" layoutY="168.0" prefHeight="35.0" prefWidth="150.0" />
+      <PasswordField fx:id="txtPassword" layoutX="340.0" layoutY="240.0" prefHeight="35.0" prefWidth="150.0" />
+      <Text layoutX="350.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" wrappingWidth="72.824951171875">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="350.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário" wrappingWidth="72.824951171875">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Button fx:id="btnButton" layoutX="393.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnButtonTeste" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: #0108fc;" text="LOGIN" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="400.0" fitWidth="298.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/Screenshots/Captura%20de%20tela%202024-08-28%20143913.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="366.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Olá, cliente. Faça seu Login!" wrappingWidth="130.93667602539062">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="54.0" fitWidth="32.0" layoutX="493.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/images__15_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Line endX="-99.99996948242188" endY="287.0" layoutX="439.0" layoutY="60.0" startX="-102.49996948242188" startY="-4.499997138977051" />
+      <Line endX="-83.29287719726562" endY="287.70709228515625" layoutX="423.0" layoutY="60.0" startX="115.7999267578125" startY="287.0" />
+      <Line endX="-99.7000732421875" endY="282.5" layoutX="638.0" layoutY="64.0" startX="-99.7000732421875" startY="-7.800000190734863" />
+      <Line endX="-86.20706176757812" endY="286.79290771484375" layoutX="422.0" layoutY="-232.0" startX="116.2999267578125" startY="287.70001220703125" />
+      <ToggleButton fx:id="VerSenha" contentDisplay="CENTER" ellipsisString="" layoutX="497.0" layoutY="241.0" mnemonicParsing="false" onAction="#visualizarSenha" prefHeight="19.0" prefWidth="24.0" text="🔓">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../packageIcons/icons8-olho-50.png" />
+               </image>
+            </ImageView>
+         </graphic></ToggleButton>
+      <TextField fx:id="txtSenha" layoutX="340.0" layoutY="239.0" prefHeight="35.0" prefWidth="150.0" visible="false" />
+      <Line endX="67.39999389648438" endY="-1.52587890625E-5" layoutX="423.0" layoutY="200.0" startX="-82.99996948242188" startY="-1.52587890625E-5" />
+      <Line endX="67.39999389648438" endY="-1.52587890625E-5" layoutX="423.0" layoutY="270.0" startX="-82.99996948242188" startY="-1.52587890625E-5" />
+   </children>
+</AnchorPane>

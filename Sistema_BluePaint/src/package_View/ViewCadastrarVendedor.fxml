@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="650.0" style="-fx-background-color: linear-gradient(to bottom, #e0f7fa 0%, #80deea 100%);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="package_Controller.controllerCadastrarVendedor">
+   <children>
+      <!-- Lateral Pane com imagem -->
+      <Pane prefHeight="486.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #FFFFFF 15%, #87CEEB 85%);">
+         <children>
+            <ImageView fitHeight="142.0" fitWidth="136.0" layoutX="20.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/Captura_de_tela_2024-08-29_142626-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      
+      <!-- Logo do topo -->
+      <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="203.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/1311237__1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+
+      <!-- Título -->
+      <Text layoutX="236.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRAR VENDEDOR" wrappingWidth="280.53686141967773">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      
+      <Line endX="122.6" endY="-0.76" layoutX="347.0" layoutY="48.0" startX="-111.0" startY="-0.76" />
+      
+      <!-- Campos de Entrada -->
+      <TextField fx:id="txtNome" layoutX="185.0" layoutY="95.0" prefHeight="26.0" prefWidth="205.0" style="-fx-background-radius: 60; -fx-border-color: #cfd8dc; -fx-border-width: 1;" />
+      <Text layoutX="196.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+      <TextField fx:id="txtCPF" layoutX="400.0" layoutY="95.0" prefHeight="26.0" prefWidth="170.0" promptText="EX: 06432234569" style="-fx-background-radius: 60; -fx-border-color: #cfd8dc; -fx-border-width: 1;" />
+      <Text layoutX="424.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" />
+      <TextField fx:id="txtEmail" layoutX="185.0" layoutY="185.0" prefHeight="27.0" prefWidth="235.0" style="-fx-background-radius: 60; -fx-border-color: #cfd8dc; -fx-border-width: 1;" />
+      <Text layoutX="195.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <TextField fx:id="txtTelefone" layoutX="428.0" layoutY="183.0" prefHeight="27.0" prefWidth="206.0" promptText="992869790" style="-fx-background-radius: 60; -fx-border-color: #cfd8dc; -fx-border-width: 1;" />
+      <Text layoutX="450.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
+      <Text layoutX="197.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento" />
+      <TextField fx:id="txtEndereco" layoutX="182.0" layoutY="347.0" prefHeight="27.0" prefWidth="329.0" style="-fx-background-radius: 60; -fx-border-color: #cfd8dc; -fx-border-width: 1;" />
+      
+      <!-- Botões -->
+      <Button fx:id="btnCadastrarVendedor" layoutX="336.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnCadastrarVendedor" prefHeight="26.0" prefWidth="99.0" style="-fx-background-radius: 40; -fx-background-color: #4caf50; -fx-text-fill: white;" text="✅ SALVAR" />
+      <Button fx:id="btnExcluir" layoutX="465.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnExcluir" prefHeight="26.0" prefWidth="99.0" style="-fx-background-radius: 40; -fx-background-color: #f44336; -fx-text-fill: white;" text="🗑 EXCLUIR" />
+      <TextField fx:id="txtDataNasc" layoutX="183.0" layoutY="256.0" prefHeight="27.0" prefWidth="154.0" style="-fx-background-radius: 60; -fx-border-color: #cfd8dc; -fx-border-width: 1;" />
+      <Text layoutX="451.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Contratação" />
+      <TextField fx:id="txtDataCont" layoutX="437.0" layoutY="255.0" prefHeight="27.0" prefWidth="154.0" style="-fx-background-radius: 60; -fx-border-color: #cfd8dc; -fx-border-width: 1;" />
+      <Text layoutX="211.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço" />
+   </children>
+</AnchorPane>
